@@ -301,7 +301,7 @@
         <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
             <h2 id="Fansheng-Song-宋凡胜"><a href="#Fansheng-Song-宋凡胜" class="headerlink" title="Fansheng Song(宋凡胜)"></a>Fansheng Song(宋凡胜)</h2><h3 id="Research-Interests"><a href="#Research-Interests" class="headerlink" title="Research Interests"></a>Research Interests</h3><p>Wireless Communication, Deep Learning(especially for graph)</p>
 <h3 id="Education"><a href="#Education" class="headerlink" title="Education"></a>Education</h3><p>2018.09 - 2021.06:<strong>Taixi High School of Shandong</strong><br>2021.09 - 2025.06:<strong>Beijing University of Aeronautics and Astronautics</strong><br>&emsp; <em>Bachelor of Engineering</em> IN Electronic Information Engineering<br>2025.09 - unknown:<strong>Beijing University of Aeronautics and Astronautics</strong><br>&emsp; <em>Doctor of Philosophy</em> IN Information and Communication Engineering<br>&emsp; Supervisor: <a class="link"   target="_blank" rel="noopener" href="https://shi.buaa.edu.cn/09690/zh_CN/index.htm" >Prof. Zhenyu Xiao <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>   </p>
-<h3 id="Contact"><a href="#Contact" class="headerlink" title="Contact"></a>Contact</h3><p>&emsp; <strong>Address</strong>:No. 37 Xueyuan Road, Haidian District, Beijing<br>&emsp; <strong>Email</strong>:<a class="link"   href="mailto:&#x46;&#x61;&#110;&#115;&#104;&#101;&#x6e;&#x67;&#x53;&#111;&#x6e;&#x67;&#98;&#x75;&#97;&#x61;&#64;&#x31;&#x36;&#51;&#x2e;&#x63;&#x6f;&#x6d;" >&#x46;&#x61;&#110;&#115;&#104;&#101;&#x6e;&#x67;&#x53;&#111;&#x6e;&#x67;&#98;&#x75;&#97;&#x61;&#64;&#x31;&#x36;&#51;&#x2e;&#x63;&#x6f;&#x6d; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Contact"><a href="#Contact" class="headerlink" title="Contact"></a>Contact</h3><p>&emsp; <strong>Address</strong>:No. 37 Xueyuan Road, Haidian District, Beijing<br>&emsp; <strong>Email</strong>:<a class="link"   href="mailto:&#x46;&#97;&#x6e;&#x73;&#x68;&#x65;&#x6e;&#103;&#83;&#x6f;&#x6e;&#103;&#x62;&#x75;&#97;&#x61;&#x40;&#x31;&#x36;&#x33;&#46;&#x63;&#111;&#x6d;" >&#x46;&#97;&#x6e;&#x73;&#x68;&#x65;&#x6e;&#103;&#83;&#x6f;&#x6e;&#103;&#x62;&#x75;&#97;&#x61;&#x40;&#x31;&#x36;&#x33;&#46;&#x63;&#111;&#x6d; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 
         </div>
 
@@ -325,33 +325,32 @@
 
         
             
-    <div id="waline"></div>
-    <script type="module" data-swup-reload-script>
-      import { init } from '/js/libs/waline.mjs';
+    <div class="twikoo-container">
+        <script data-swup-reload-script
+                src='https://cdnjs.cloudflare.com/ajax/libs/twikoo/1.6.10/twikoo.all.min.js'
+        ></script>
+        <div id="twikoo-comment"></div>
+        <script data-swup-reload-script>
+            function loadTwikoo() {
+                twikoo.init({
+                    el: '#twikoo-comment',
+                    envId: 'https://comment-aieo876hq-big-ducks-projects.vercel.app',
+                });
+            }
 
-      function loadWaline() {
-        init({
-          el: '#waline',
-          serverURL: 'https://example.example.com',
-          lang: 'zh-CN',
-          dark: 'body[class~="dark-mode"]',
-          reaction: false,
-          requiredMeta: ['nick', 'mail'],
-          emoji: [],
-          recaptchaV3Key: "wasd",
-          
-        });
-      }
-
-      if (typeof swup !== 'undefined') {
-        loadWaline();
-      } else {
-        window.addEventListener('DOMContentLoaded', loadWaline);
-      }
-    </script>
-
+            if ('true') {
+                const loadTwikooTimeout = setTimeout(() => {
+                    loadTwikoo();
+                    clearTimeout(loadTwikooTimeout);
+                }, 1000);
+            } else {
+                window.addEventListener('DOMContentLoaded', loadTwikoo);
+            }
+        </script>
+    </div>
 
 
+        
         
     
 </div>
