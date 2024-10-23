@@ -4364,6 +4364,23 @@ html.is-animating .transition-fade {
   width: 100%;
   z-index: 1009;
 }
+.progress-bar-container .scroll-progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  visibility: hidden;
+  z-index: 1007;
+  background: var(--primary-color);
+  transition-property: color, background, box-shadow, border-color, width, opacity;
+  transition-delay: 0s, 0s, 0s, 0s, 0s, 0s;
+  transition-duration: 0.2s, 0.2s, 0.2s, 0.2s, 0.1s, 0.1s;
+  transition-timing-function: ease, ease, ease, ease, ease, ease;
+}
+.progress-bar-container .scroll-progress-bar.hide {
+  display: none !important;
+}
 html.is-animating .scroll-progress-bar {
   opacity: 0;
   transition: opacity 0.1s ease-out;
@@ -4647,6 +4664,27 @@ html.is-animating .scroll-progress-bar {
 .navbar-container .navbar-content .left {
   display: flex;
   align-items: center;
+}
+.navbar-container .navbar-content .left .logo-image {
+  width: 34px;
+  height: 34px;
+  margin-right: 12px;
+}
+@media (max-width: 768px) {
+  .navbar-container .navbar-content .left .logo-image {
+    width: 30.6px;
+    height: 30.6px;
+  }
+}
+@media (max-width: 640px) {
+  .navbar-container .navbar-content .left .logo-image {
+    width: 27.200000000000003px;
+    height: 27.200000000000003px;
+  }
+}
+.navbar-container .navbar-content .left .logo-image img {
+  border-radius: 6px;
+  width: 100%;
 }
 .navbar-container .navbar-content .left .logo-title {
   font-size: 1.7rem;
