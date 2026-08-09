@@ -1,0 +1,8 @@
+- links_category:
+  has_thumbnail: false
+  list:
+    - name: ximenzhengmo
+      link: http://ximenzhengmo.space
+      description: BUAA 2202
+      avatar: http://ximenzhengmo.space/images/avatar_image.png
+      thumbnail:
