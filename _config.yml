@@ -102,5 +102,5 @@ theme: redefine
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/FanshengSong/FanshengSong.github.io.git
+  repo: ssh://git@ssh.github.com:443/FanshengSong/FanshengSong.github.io.git
   branch: main
