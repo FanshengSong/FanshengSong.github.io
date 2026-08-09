@@ -25,6 +25,6 @@
     "hexo-server": "^3.0.0",
     "hexo-theme-landscape": "^1.0.0",
     "hexo-theme-redefine": "^2.9.0",
-    "mongodb": "^6.10.0"
+    "mongodb": "^7.5.0"
   }
 }
